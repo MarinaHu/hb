@@ -61,7 +61,7 @@ def gen_hb(probe,pdb):
                                     dis = distance.cdist(X, Y,  'euclidean')
                                     dis = dis[0,0]
                                     dis = format(dis,".2f")
-                                    hb[a + '%-4s'%'<->' + b] = [dis, 1]
+                                    hb[a + '%-4s'%'<->' + b] = [dis, 1, intype]
                                 else:
                                     hb[a + '%-4s'%'<->' + b][1] += 1
                     elif 'H' in atom2:   
@@ -98,7 +98,7 @@ def gen_hb(probe,pdb):
                                     dis = distance.cdist(X, Y,  'euclidean')
                                     dis = dis[0,0]
                                     dis = format(dis,".2f")
-                                    hb[a + '%-4s'%'<->' + b] = [dis, 1]
+                                    hb[a + '%-4s'%'<->' + b] = [dis, 1, intype]
                                 else:
                                     hb[a + '%-4s'%'<->' + b][1] += 1
                 elif (res2 == 203) and (res1 != 203):
@@ -137,7 +137,7 @@ def gen_hb(probe,pdb):
                                     dis = distance.cdist(X, Y,  'euclidean')
                                     dis = dis[0,0]
                                     dis = format(dis,".2f")
-                                    hb[b + '%-4s'%'<->' + a] = [dis, 1]
+                                    hb[b + '%-4s'%'<->' + a] = [dis, 1, intype]
                                 else:
                                     hb[b + '%-4s'%'<->' + a][1] += 1
                     elif 'H' in atom2:   
@@ -174,13 +174,13 @@ def gen_hb(probe,pdb):
                                     dis = distance.cdist(X, Y,  'euclidean')
                                     dis = dis[0,0]
                                     dis = format(dis,".2f")
-                                    hb[b + '%-4s'%'<->' + a] = [dis, 1]
+                                    hb[b + '%-4s'%'<->' + a] = [dis, 1, intype]
                                 else:
                                     hb[b + '%-4s'%'<->' + a][1] += 1
                                     
     with open('hb.probe', 'w') as f:
         for k,v in hb.items():
-            f.write('%-40s'%k + '%-4s'%':' + '%-2s'%v[0]+ '%-2s'%',' + '%-4s'%v[1])
+            f.write('%-40s'%k + '%-4s'%':' + '%-2s'%v[0]+ '%-2s'%',' + '%-4s'%v[1] + '%-4s'%v[2])
             f.write('\n')
 
     
