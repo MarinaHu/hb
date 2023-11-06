@@ -9,7 +9,7 @@ def gen_hb(probe,pdb):
         with open(pdb, 'r') as fb:  
             data = fa.readlines()
             datab = fb.readlines()
-            res_chain_dict = {}
+  
             hb = {}
             for line in data:
                 intype = line[6:8].replace(' ','')
@@ -27,9 +27,9 @@ def gen_hb(probe,pdb):
                 a = '%-4s'%chain1 + '%-4s'%str(res1) + '%-5s'%code1 + '%-5s'%atom1
                 b = '%-4s'%chain2 + '%-4s'%str(res2) + '%-5s'%code2 + '%-5s'%atom2
                 if (res1 == 203) and (res2 != 203):  
-                    if 'H' in atom1:   
+                    if 'H' == atom1[0]:   
                         for i in A:
-                            if i in atom2:
+                            if i == atom2[0]:
                                 if (a + '%-4s'%'<->' + b) not in hb.keys():
                                     for lineb in datab:
                                         atom = lineb[11:17].replace(' ','')
@@ -64,9 +64,9 @@ def gen_hb(probe,pdb):
                                     hb[a + '%-4s'%'<->' + b] = [dis, 1, intype]
                                 else:
                                     hb[a + '%-4s'%'<->' + b][1] += 1
-                    elif 'H' in atom2:   
+                    elif 'H' == atom2[0]:   
                         for i in A:
-                            if i in atom1:
+                            if i == atom1[0]:
                                 if (a + '%-4s'%'<->' + b) not in hb.keys():
                                     for lineb in datab:
                                         atom = lineb[11:17].replace(' ','')
@@ -102,9 +102,9 @@ def gen_hb(probe,pdb):
                                 else:
                                     hb[a + '%-4s'%'<->' + b][1] += 1
                 elif (res2 == 203) and (res1 != 203):
-                    if 'H' in atom1:   
+                    if 'H' == atom1[0]:   
                         for i in A:
-                            if i in atom2:
+                            if i == atom2[0]:
                                 
                                 if (b + '%-4s'%'<->' + a) not in hb.keys():
                                     for lineb in datab:
@@ -140,9 +140,9 @@ def gen_hb(probe,pdb):
                                     hb[b + '%-4s'%'<->' + a] = [dis, 1, intype]
                                 else:
                                     hb[b + '%-4s'%'<->' + a][1] += 1
-                    elif 'H' in atom2:   
+                    elif 'H' == atom2[0]:   
                         for i in A:
-                            if i in atom1:
+                            if i == atom1[0]:
                                 if (b + '%-4s'%'<->' + a) not in hb.keys():
                                     for lineb in datab:
                                         atom = lineb[11:17].replace(' ','')
