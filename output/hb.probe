@@ -1,21 +1,36 @@
-A   203 TSA  O3   <-> A   90  ARG  HD3  :   2.77, 36  wc  
-A   203 TSA  O4   <-> A   115 LEU  HB3  :   3.10, 2   wc  
-A   203 TSA  O3   <-> A   115 LEU  HD13 :   2.87, 10  wc  
-A   203 TSA  O7   <-> A   115 LEU  HD22 :   2.78, 22  wc  
-A   203 TSA  H03  <-> A   210 HOH  O    :   3.04, 9   wc  
-A   203 TSA  H05  <-> A   90  ARG  NH1  :   2.94, 35  wc  
-A   203 TSA  H07  <-> A   7   ARG  NH1  :   2.65, 53  wc  
-A   203 TSA  H07  <-> C   73  VAL  O    :   2.53, 50  wc  
-A   203 TSA  O1   <-> C   59  ALA  HB1  :   2.88, 11  wc  
-A   203 TSA  O2   <-> C   60  LYS  HB2  :   2.78, 35  wc  
-A   203 TSA  O5   <-> C   74  THR  HA   :   2.55, 54  wc  
-A   203 TSA  O4   <-> A   7   ARG  HH12 :   2.67, 1   wc  
-A   203 TSA  O5   <-> C   75  CYS  H    :   2.47, 36  wc  
-A   203 TSA  O7   <-> A   90  ARG  HH11 :   2.23, 42  cc  
-A   203 TSA  O3   <-> A   7   ARG  HH12 :   2.00, 38  hb  
-A   203 TSA  O3   <-> A   7   ARG  HH22 :   2.00, 50  hb  
-A   203 TSA  O2   <-> A   210 HOH  H2   :   2.49, 6   wc  
-A   203 TSA  O7   <-> A   115 LEU  HD13 :   3.12, 1   wc  
-A   203 TSA  HO5  <-> C   74  THR  OG1  :   2.59, 35  wc  
-A   203 TSA  H06  <-> A   210 HOH  O    :   2.90, 2   wc  
-A   203 TSA  O4   <-> A   108 TYR  HH   :   2.18, 49  cc  
+A   203 TSA  O3   <-> A   90  ARG  HD3  (wc):   2.77, 23  
+A   203 TSA  O4   <-> A   115 LEU  HB3  (wc):   3.10, 2   
+A   203 TSA  O3   <-> A   115 LEU  HD13 (wc):   2.87, 10  
+A   203 TSA  O7   <-> A   115 LEU  HD22 (wc):   2.78, 14  
+A   203 TSA  H03  <-> A   210 HOH  O    (wc):   3.04, 9   
+A   203 TSA  H05  <-> A   90  ARG  NH1  (wc):   2.94, 24  
+A   203 TSA  H07  <-> A   7   ARG  NH1  (wc):   2.65, 3   
+A   203 TSA  H07  <-> C   73  VAL  O    (wc):   2.53, 3   
+A   203 TSA  O1   <-> C   59  ALA  HB1  (wc):   2.88, 11  
+A   203 TSA  O2   <-> C   60  LYS  HB2  (wc):   2.78, 24  
+A   203 TSA  O5   <-> C   74  THR  HA   (wc):   2.55, 10  
+A   203 TSA  O3   <-> A   90  ARG  HD3  (cc):   2.77, 13  
+A   203 TSA  O7   <-> A   115 LEU  HD22 (cc):   2.78, 8   
+A   203 TSA  H05  <-> A   90  ARG  NH1  (cc):   2.94, 11  
+A   203 TSA  H07  <-> A   7   ARG  NH1  (cc):   2.65, 35  
+A   203 TSA  H07  <-> C   73  VAL  O    (cc):   2.53, 36  
+A   203 TSA  O2   <-> C   60  LYS  HB2  (cc):   2.78, 11  
+A   203 TSA  O5   <-> C   74  THR  HA   (cc):   2.55, 36  
+A   203 TSA  H07  <-> A   7   ARG  NH1  (so):   2.65, 15  
+A   203 TSA  H07  <-> C   73  VAL  O    (so):   2.53, 11  
+A   203 TSA  O5   <-> C   74  THR  HA   (so):   2.55, 8   
+A   203 TSA  O4   <-> A   7   ARG  HH12 (wc):   2.67, 1   
+A   203 TSA  O5   <-> C   75  CYS  H    (wc):   2.47, 9   
+A   203 TSA  O7   <-> A   90  ARG  HH11 (cc):   2.23, 19  
+A   203 TSA  O5   <-> C   75  CYS  H    (cc):   2.47, 27  
+A   203 TSA  O3   <-> A   7   ARG  HH12 (hb):   2.00, 38  
+A   203 TSA  O3   <-> A   7   ARG  HH22 (hb):   2.00, 50  
+A   203 TSA  O7   <-> A   90  ARG  HH11 (hb):   2.23, 23  
+A   203 TSA  O2   <-> A   210 HOH  H2   (wc):   2.49, 4   
+A   203 TSA  O7   <-> A   115 LEU  HD13 (wc):   3.12, 1   
+A   203 TSA  HO5  <-> C   74  THR  OG1  (wc):   2.59, 20  
+A   203 TSA  H06  <-> A   210 HOH  O    (wc):   2.90, 2   
+A   203 TSA  O4   <-> A   108 TYR  HH   (cc):   2.18, 18  
+A   203 TSA  O2   <-> A   210 HOH  H2   (cc):   2.49, 2   
+A   203 TSA  HO5  <-> C   74  THR  OG1  (cc):   2.59, 15  
+A   203 TSA  O4   <-> A   108 TYR  HH   (hb):   2.18, 31  
