@@ -4,6 +4,8 @@ from scipy.spatial import distance
 pdborder = ['template','reactant','TS','product']
 A = ['F','O','N','S','P','Cl']
 def gen_pdb(pdb):
+    #print(pdb)
+    #pdb = [pdb1,pdb2,pdb3,pdb4]
     pdb = pdb.replace(',',' ')
     pdb = pdb.split()
     return pdb
