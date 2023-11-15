@@ -3,7 +3,7 @@ import argparse
 from scipy.spatial import distance
 pdborder = ['template','reactant','TS','product']
 A = ['F','O','N','S','P','Cl']
-top = ['H02','H01','C9','C8','O7','C11','O4','O3']
+top = ['H06','H01','C9','C8','O7','C11','O4','O3']
 def gen_pdb(pdb):
     pdb = pdb.replace(',',' ')
     pdb = pdb.split()
